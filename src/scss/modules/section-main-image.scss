@@ -1,0 +1,30 @@
+.main-image{
+    height: 36.25em;
+    width: 100%;
+    background-image: url(../../../public/img/main.jpg);
+    background-position: center;
+    div{
+        h2{
+        margin: 0;
+        font-weight: normal;
+        color: #444;
+        font-size: 3em;
+        text-transform: uppercase;
+        text-align: center;
+        padding: 2.5em ;
+        }
+        .button-1{
+            display: block;
+            height: 2.2em;
+            width:6.5em;
+            background: #ff7a00;
+            color: #fff;
+            font-size: 1.25em;
+            margin: 0 auto;
+            line-height:2em ;
+            text-align: center;
+            border-radius: 5px ;
+            border: none;
+        }
+    }
+}
