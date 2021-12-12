@@ -1,81 +1,17 @@
-body {
-  padding: 0;
-  margin: 0;
-}
+/* Error: Can't find stylesheet to import.
+ *   ,
+ * 2 | @import "../../node_modules/bootstrap";
+ *   |         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ *   '
+ *   src\scss\app.scss 2:9  root stylesheet */
 
-header {
-  width: 100%;
-  height: 5em;
-  display: flex;
-  align-items: center;
-}
-header nav {
-  display: flex;
-  height: 5em;
-  width: 100%;
-  justify-content: space-between;
-  align-items: center;
-}
-header nav .title {
-  text-align: center;
-  width: 40%;
-}
-header nav .title h1 {
-  margin: 0;
-  font-family: "Crete Round", serif;
-  font-size: 3.5em;
-  color: #444;
-}
-header nav .title h1 .orange {
-  color: #ff7a00;
-}
-header nav .menu {
-  width: 60%;
-  padding-left: 0.5rem;
-  display: flex;
-  justify-content: center;
-}
-header nav .menu ul {
-  width: 100%;
-  display: flex;
-  justify-content: space-evenly;
-}
-header nav .menu ul li {
-  list-style: none;
-}
-header nav .menu ul li a {
-  color: #444;
-  font-size: 1.4em;
-  text-decoration: none;
-}
-
-.main-image {
-  height: 36.25em;
-  width: 100%;
-  background-image: url(../../../public/img/main.jpg);
-  background-position: center;
-}
-.main-image div h2 {
-  margin: 0;
-  font-weight: normal;
-  color: #444;
-  font-size: 3em;
-  text-transform: uppercase;
-  text-align: center;
-  padding: 2.5em;
-}
-.main-image div .button-1 {
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
   display: block;
-  height: 2.2em;
-  width: 6.5em;
-  background: #ff7a00;
-  color: #fff;
-  font-size: 1.25em;
-  margin: 0 auto;
-  line-height: 2em;
-  text-align: center;
-  border-radius: 5px;
-  border: none;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: "Error: Can't find stylesheet to import.\a   \2577 \a 2 \2502  @import \"../../node_modules/bootstrap\";\d\a   \2502          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\a   \2575 \a   src\\scss\\app.scss 2:9  root stylesheet";
 }
-
-/*# sourceMappingURL=app.css.map */
